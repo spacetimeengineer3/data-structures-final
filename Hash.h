@@ -1,6 +1,6 @@
 #pragma once
-#ifndef Hash_h
-#define Hash_h
+#ifndef HASH_H
+#define HASH_H
 #include <list>
 
 class Hash{
@@ -18,8 +18,24 @@ class Hash{
 			table = new list<int>[total_persons];
 		}
 
-		void insertPerson(int key){
+		void onScenePerson(int key){
 			table[getHash(key)i].push_back(key);
 		}
+		void exitScenePerson(int key){
+			int x = getHash(key);
+
+			list<int>::iterator i;
+			for (i = table[x].being(); i !- table[x].end i++){
+				if( *i == key)
+					break;
+			}
+
+			if(i != table[x].end())
+				table[x].erase(i);
+
+		}
+		
+
+
 }
 
