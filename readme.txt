@@ -20,6 +20,8 @@ The Cold zone holds everything else.
 
 Due to the natural chaos of an big incident, it is necessary for the Incdient Commander to attempt to keep track of where everyone is, and what they are doing. 
 
+The decision to use an Array was used because it provides the most flexibility for the Incident Commander. I was going to go for a Queue in the hot zone, but people exit the hot zone for random reasons (there is major inconsistencies for how much air a firefighter uses)
 
+The lack of restrictions was used because some people can transgress zones so quickly that the Incident Commander might need to directly record (ie from Hot Zone to Cold Zone or vice versa) The big one was a RIC team going directly to the Hot zone for a rescue
 
 
